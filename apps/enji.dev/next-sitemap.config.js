@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://alchemystudio.vercel.app',
+  siteUrl: 'https://www.enji.dev',
   priority: 0.6,
   generateRobotsTxt: true,
   generateIndexSitemap: false,

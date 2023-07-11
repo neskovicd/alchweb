@@ -153,14 +153,16 @@ function Reactions({
           'dark:bg-slate-900/80'
         )}
       />
-      <div className={clsx('flex items-start gap-1')}>
-        <div className={clsx('flex flex-col items-center gap-2')}></div>
+      <div className={clsx('flex items-center gap-4')} />
+      <div className={clsx('flex items-start gap-2')}>
+        <div className={clsx('flex flex-col items-center gap-2')} />
         <div className={clsx('flex flex-col items-center gap-2')}>
           <ShareButton
             onItemClick={(type) => {
               addShare({ type });
             }}
           />
+          <ReactionCounter count={shares} />
         </div>
       </div>
     </m.div>
