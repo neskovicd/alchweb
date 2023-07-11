@@ -27,7 +27,7 @@ function Head({
     <NextHead>
       <title>{htmlTitle}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="apps/enji.dev/public/favicon.png" />
 
       {/* seo */}
       <link rel="canonical" href={currentUrl} />
