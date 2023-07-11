@@ -9,7 +9,7 @@ function Error500() {
     <>
       <Head>
         <title>Server Error</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.ico" />
         <meta name="robots" content="noindex" />
       </Head>
       <Error500Contents />
