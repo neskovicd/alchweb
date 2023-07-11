@@ -138,7 +138,7 @@ function Activity({ onItemClick = () => {} }: ActivityProps) {
         <m.div
           className={clsx('text-sm text-slate-700', 'dark:text-slate-400')}
           variants={animation}
-        ></m.div>
+        />
       );
     }
 

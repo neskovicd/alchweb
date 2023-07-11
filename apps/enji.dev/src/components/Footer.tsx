@@ -140,7 +140,6 @@ function FooterDescription() {
             <GitHubIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
-        <li></li>
       </ul>
     </div>
   );
