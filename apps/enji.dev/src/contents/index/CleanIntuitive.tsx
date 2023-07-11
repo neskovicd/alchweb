@@ -6,8 +6,6 @@ import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
 import SectionTitle from '@/components/sections/SectionTitle';
 
-import TodoItem from '@/contents/index/Cards/TodoItem';
-
 import type { TodoItemState } from '@/contents/index/Cards/TodoItem';
 
 type Content = {
@@ -54,7 +52,7 @@ function CleanIntuitive() {
                 key={item.state}
                 title={item.title}
                 description={item.description}
-                icon={'b'}
+                icon="b"
                 active={currentState?.state === item.state}
                 onClick={() => setCurrentState(item)}
               />
