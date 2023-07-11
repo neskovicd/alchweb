@@ -30,8 +30,8 @@ function ProjectsContents() {
         }}
       />
       <SectionContent>
-        <div className={clsx('flex', 'lg:gap-12')}>
-          <div className={clsx('hidden flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
+        <div className={clsx('flex', 'lg:gap-12', 'sm: -mt-16 flex-col')}>
+          <div className={clsx(' flex-1 flex-col gap-3 pt-8', 'lg:flex')}>
             <div className={clsx('flex flex-col gap-3')}>
               <SectionButton
                 title="Available on App Store"
@@ -50,7 +50,7 @@ function ProjectsContents() {
             </div>
           </div>
           <div className={clsx('w-full', 'lg:w-auto')}>
-            <div className={clsx('-mt-[41px]')}>
+            <div className={clsx('-mt-[41px]', 'sm: mt-[20px]')}>
               <div className={clsx('w-full', 'lg:h-[400px] lg:w-[600px]')}>
                 <AppWindow
                   type="browser"

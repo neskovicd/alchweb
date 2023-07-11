@@ -13,7 +13,7 @@ import dayjs from '@/utils/dayjs';
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/enjidev/enji.dev"
+      href="https://github.com/"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
