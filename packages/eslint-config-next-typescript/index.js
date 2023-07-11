@@ -10,9 +10,7 @@ module.exports = {
     'plugin:@next/next/recommended',
     'prettier',
   ],
-  images: {
-    domains: ['i.imgur.com'],
-  },
+
   parser: '@typescript-eslint/parser',
   rules: {
     '@next/next/no-html-link-for-pages': ['error', 'apps/enji.dev/src/pages/'],

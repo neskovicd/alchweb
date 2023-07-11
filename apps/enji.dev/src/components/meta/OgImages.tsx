@@ -148,7 +148,7 @@ export function PostOgImage({
         <img
           width="48"
           height="48"
-          src="https://github.com/enjidev.png?size=48"
+          src="https://github.com/"
           style={styles.authorAvatar}
         />
         <div style={styles.authorName}>@enjidev</div>
@@ -214,10 +214,10 @@ export function PageOgImage({
         <img
           width="48"
           height="48"
-          src="https://github.com/enjidev.png?size=48"
+          src="https://github.com/"
           style={styles.authorAvatar}
         />
-        <div style={styles.authorName}>@enjidev</div>
+        <div style={styles.authorName}>@alchemy</div>
       </div>
       <div
         style={
