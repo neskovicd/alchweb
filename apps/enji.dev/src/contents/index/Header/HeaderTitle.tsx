@@ -84,7 +84,7 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span className={clsx('lowercase')}>A</span>{' '}
+          <span className={clsx('lowercase')} />{' '}
           <strong
             className={clsx(
               'font-bold lowercase text-slate-700',
