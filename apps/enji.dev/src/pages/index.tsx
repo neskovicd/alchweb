@@ -10,7 +10,7 @@ function Index() {
       <Head
         title="Alchemy Studio · Game Development Studio"
         description="We're game development company responsible for creating top-notch games for everyone."
-        ogImage={`${getBaseUrl()}/assets/images/og-image.png`}
+        ogImage={`${getBaseUrl()}/assets/images/alchemystudiologo.png`}
         overrideTitle
       />
       <IndexContents />
