@@ -34,8 +34,8 @@ function Head({
 
       {/* og image */}
       <meta property="og:image" content={ogImage} />
-      <meta property="og:image:width" content="2048" />
-      <meta property="og:image:height" content="1024" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="600" />
       <meta property="og:image:alt" content={`Image with "${title}" text.`} />
 
       {/* twitter card */}
