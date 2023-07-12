@@ -2,15 +2,18 @@ import clsx from 'clsx';
 import { m } from 'framer-motion';
 
 import {
+  BlenderIcon,
   FigmaIcon,
   FramerMotionIcon,
   NextJsIcon,
   ReactIcon,
   TailwindCssIcon,
+  ThreeDS,
   TypeScriptIcon,
   UnityIcon,
   UnrealEngine,
   VSCodeIcon,
+  ZBrush,
 } from '@/components/Icons';
 
 const animation = {
@@ -53,12 +56,12 @@ function HeaderTechStack() {
         </m.li>
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#06B6D4]')}>
-            <TailwindCssIcon className={clsx('h-6 w-6')} />
+            <BlenderIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
-            <FramerMotionIcon className={clsx('h-6 w-6')} />
+            <ThreeDS className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
@@ -67,7 +70,7 @@ function HeaderTechStack() {
               'transition duration-200 hover:text-[#000000] dark:hover:text-[#FFFFFF]'
             )}
           >
-            <NextJsIcon className={clsx('h-6 w-6')} />
+            <ZBrush className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
