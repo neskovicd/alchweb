@@ -52,6 +52,20 @@ function CleanIntuitive() {
     }
   }, [isFullScreen]);
 
+  useEffect(() => {
+    // Enable autoplay on mobile devices
+    const playVideo = () => {
+      if (videoRef.current) {
+        videoRef.current.play().catch((error) => {
+          // Autoplay was prevented by the browser, handle the error
+          console.log('Autoplay was prevented:', error);
+        });
+      }
+    };
+
+    playVideo();
+  }, []);
+
   return (
     <>
       <header className={clsx('mb-8')}>
@@ -100,6 +114,7 @@ function CleanIntuitive() {
                   className="rounded-2xl"
                   autoPlay
                   muted
+                  playsInline // Enable autoplay on mobile devices
                 >
                   <source src="/assets/images/boff.mp4" type="video/mp4" />
                   <track
