@@ -98,7 +98,6 @@ function CleanIntuitive() {
                   width={500}
                   height={400}
                   className="rounded-2xl"
-                  controls
                   autoPlay
                   muted
                 >

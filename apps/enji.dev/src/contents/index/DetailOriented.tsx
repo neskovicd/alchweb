@@ -1,7 +1,8 @@
 import clsx from 'clsx';
 
-import SectionTitle from '@/components/sections/SectionTitle';
 import ImageContainer from '@/components/sections/ImageContainer';
+import SectionTitle from '@/components/sections/SectionTitle';
+import VideoContainer from '@/components/sections/VideoContainer';
 
 function DetailOriented() {
   return (
@@ -11,7 +12,7 @@ function DetailOriented() {
         caption="History"
         description="Immersive adventure/puzzle game where our protagonist is placed in an unknown facility seeking salvation."
       />
-      <ImageContainer imgUrl="https://media.tenor.com/hFSHdAzO5IYAAAAC/beyblade-burst.gif" />
+      <VideoContainer videoSrc="https://cdn.akamai.steamstatic.com/steam/apps/256790651/movie480_vp9.webm?t=1593511096" />
     </header>
   );
 }
