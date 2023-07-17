@@ -99,6 +99,8 @@ function CleanIntuitive() {
                   height={400}
                   className="rounded-2xl"
                   controls
+                  autoPlay
+                  muted
                 >
                   <source src="/assets/images/boff.mp4" type="video/mp4" />
                   <track
