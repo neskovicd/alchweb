@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { SectionButton } from '@/components/sections/SectionButton';
 import SectionContent from '@/components/sections/SectionContent';
@@ -26,6 +26,31 @@ const content: Array<Content> = [
 
 function CleanIntuitive() {
   const [currentState, setCurrentState] = useState<Content | null>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isFullScreen, setIsFullScreen] = useState(false);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullScreen(!isFullScreen);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+    };
+  }, [isFullScreen]);
+
+  useEffect(() => {
+    if (!isFullScreen) {
+      // Exit full-screen mode, handle the video element visibility
+      if (videoRef.current) {
+        if (!document.fullscreenElement) {
+          videoRef.current.style.display = 'block';
+        }
+      }
+    }
+  }, [isFullScreen]);
 
   return (
     <>
@@ -68,13 +93,20 @@ function CleanIntuitive() {
               )}
             >
               <div className="border-accent-400 dark:border-accent-400  rounded-2xl border-2 dark:bg-slate-900">
-                <Image
-                  src="https://media.tenor.com/hFSHdAzO5IYAAAAC/beyblade-burst.gif"
-                  alt="Bladeoff Image"
+                <video
+                  ref={videoRef}
                   width={500}
                   height={400}
                   className="rounded-2xl"
-                />
+                  controls
+                >
+                  <source src="/assets/images/boff.mp4" type="video/mp4" />
+                  <track
+                    src="/path/to/captions.vtt"
+                    kind="captions"
+                    label="English"
+                  />
+                </video>
               </div>
             </div>
           </div>
