@@ -20,7 +20,7 @@ const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   reactStrictMode: true,
   images: {
-    domains: ['i.imgur.com', 'media.tenor.com'],
+    domains: ['i.imgur.com', 'media.tenor.com', 'i.giphy.com'],
   },
 };
 

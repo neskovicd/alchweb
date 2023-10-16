@@ -77,7 +77,7 @@ function ProjectsContents() {
                   ]}
                 >
                   {currentState === 'github' && (
-                    <ImageContainerGD imgUrl="https://media.tenor.com/hFSHdAzO5IYAAAAC/beyblade-burst.gif" />
+                    <ImageContainerGD imgUrl="https://i.giphy.com/media/njUiLJ7F50gafGtCRc/source.gif" />
                   )}
                   {currentState === 'npm' && (
                     <NpmWireframe
