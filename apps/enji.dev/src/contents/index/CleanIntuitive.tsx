@@ -116,7 +116,7 @@ function CleanIntuitive() {
                   muted
                   playsInline // Enable autoplay on mobile devices
                 >
-                  <source src="/assets/images/boff.mp4" type="video/mp4" />
+                  <source src="" type="video/mp4" />
                   <track
                     src="/path/to/captions.vtt"
                     kind="captions"

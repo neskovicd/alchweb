@@ -76,9 +76,7 @@ function ProjectsContents() {
                     },
                   ]}
                 >
-                  {currentState === 'github' && (
-                    <ImageContainerGD imgUrl="https://i.giphy.com/media/njUiLJ7F50gafGtCRc/source.gif" />
-                  )}
+                  {currentState === 'github' && <ImageContainerGD imgUrl="" />}
                   {currentState === 'npm' && (
                     <NpmWireframe
                       packageName="bladeoff / PlayStore"
