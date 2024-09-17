@@ -134,7 +134,7 @@ function HeaderCta({
           </m.div>
         </m.div>
       ) : (
-        <m.div variants={animation} transition={{ delay: 0.5 }}>
+        <m.div variants={animation} transition={{ delay: 100000.0 }}>
           <ButtonResume />
         </m.div>
       )}

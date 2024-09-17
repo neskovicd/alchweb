@@ -18,7 +18,7 @@ function LastUpdate() {
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
     >
-      <span>see the recent update on GitHub</span>
+      <span>Made with heart</span>
     </a>
   );
 }
@@ -115,7 +115,7 @@ function FooterDescription() {
         We&apos;re Alchemy Studio, <strong>game developers</strong> who love
         creating amazing games.
       </p>
-      <ul className={clsx('-ml-2 flex gap-1')}>
+      {/* <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
             href="https://twitter.com/"
@@ -140,7 +140,7 @@ function FooterDescription() {
             <GitHubIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }
@@ -178,7 +178,7 @@ function Footer() {
                     { title: 'Studio', href: '/work/studio' },
                   ]}
                 />
-                <FooterGroup
+                {/*      <FooterGroup
                   title="General"
                   links={[
                     {
@@ -191,7 +191,7 @@ function Footer() {
                       label: 'new',
                     },
                   ]}
-                />
+                /> */}
               </div>
             </div>
           </div>

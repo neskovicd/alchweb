@@ -46,12 +46,12 @@ function Navbar() {
           <nav className={clsx('flex', 'md:gap-2')} data-accent="violet">
             <NavLogo href="/" title="Home" />
             <ul className={clsx('flex items-center', 'md:gap-1')}>
-              <li>
-                <NavLink title="Projects" href="/projects" />
-              </li>
-              <li>
-                <NavLink title="Releases" href="/today-i-learned" />
-              </li>
+              {/* <li>
+    <NavLink title="Projects" href="/projects" />
+  </li>
+  <li>
+    <NavLink title="Releases" href="/today-i-learned" />
+  </li> */}
               <li className={clsx('lg:hidden')} data-accent="blue">
                 <NavLinkDropdown title="Work" items={workLinks} />
               </li>
@@ -60,7 +60,7 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          <ul className={clsx('flex items-center')}>
+          {/*  <ul className={clsx('flex items-center')}>
             <li className={clsx('hidden', 'sm:block')}>
               <NavIcon
                 href="https://twitter.com/"
@@ -86,7 +86,7 @@ function Navbar() {
             <li className={clsx('mr-2')}>
               <NavIconQuickAccess />
             </li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </header>
