@@ -60,8 +60,8 @@ function Navbar() {
               </li>
             </ul>
           </nav>
-          {/*  <ul className={clsx('flex items-center')}>
-            <li className={clsx('hidden', 'sm:block')}>
+          <ul className={clsx('flex items-center')}>
+            {/*  <li className={clsx('hidden', 'sm:block')}>
               <NavIcon
                 href="https://twitter.com/"
                 icon={<TwitterIcon className={clsx('h-5 w-5')} />}
@@ -82,11 +82,11 @@ function Navbar() {
                   'dark:bg-slate-700'
                 )}
               />
-            </li>
+            </li> */}
             <li className={clsx('mr-2')}>
               <NavIconQuickAccess />
             </li>
-          </ul> */}
+          </ul>
         </div>
       </div>
     </header>
