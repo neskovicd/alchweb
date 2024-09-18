@@ -13,7 +13,7 @@ import dayjs from '@/utils/dayjs';
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/"
+      href="https://www.alchemystudio.dev"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}

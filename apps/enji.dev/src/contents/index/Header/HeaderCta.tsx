@@ -108,7 +108,7 @@ function HeaderCta({
       <m.div
         className={clsx('relative z-20')}
         variants={animation}
-        transition={{ delay: 1000000 }}
+        transition={{ delay: 0.5 }}
       >
         <ButtonContactMe />
       </m.div>
